@@ -1,0 +1,109 @@
+@import url('rest.css');
+@import url('layout.css');
+@import url('cards.css');
+@import url('Ressponsive.css');
+
+.visit {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.visit a {
+    font-family: 'Source Serif Pro', serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19.5px;
+    background-color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    padding: 15px 28px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: none;
+  }
+
+  .Read-More{
+    margin-top: 20px;
+    padding: revert;
+  }
+
+
+/* CSS Grid for Blog Homepage */
+.blog-homepage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.blog-post-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Author Info */
+.blog-post h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.author-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.author-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.author-info ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.author-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-details ul {
+    list-style-type: none;
+}
+
+.author-details ul li {
+    margin-bottom: 10px;
+}
+
+.card-image-blog {
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list ul {
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,13 @@
+/* Layout CSS */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.clr {
+    clear: both;
+}
+.header-blog {
+    text-align: center;
+    margin-bottom: 20px;
+}

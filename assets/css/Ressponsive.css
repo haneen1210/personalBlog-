@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+
+    .blog-posts {
+      display: flow-root;
+      justify-content: initial;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 1000px;}
+  
+    }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+      .container {
+          padding: 0 10px;
+      }
+  
+      .nav-list li {
+          margin-right: 10px;
+      }
+  }
+  
+  
+  .author-details{
+      margin-right: 50px;
+  
+  
+  }
+  @media (max-width: 576px) {
+      .blog-post h1 {
+          font-size: 1.3rem; /* Adjusted font size for blog post title */
+          margin-bottom: 2rem;
+      }
+  
+      .author-info img {
+          max-width: 100px; /* Further reduced max-width for author image on smaller screens */
+      }
+  
+      .author-details h2 {
+          font-size: 1rem; /* Further reduced font size for author name on smaller screens */
+      }
+  
+      .author-details p {
+          font-size: 0.8rem; /* Further reduced font size for author details on smaller screens */
+      }
+  }
+  

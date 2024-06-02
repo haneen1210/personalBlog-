@@ -1,0 +1,101 @@
+/* Footer */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   /* background-color: aqua;*/
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.clr{
+    clear: both;
+}
+ul{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+}
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer_blog {
+    text-align: center;
+    padding: -0.5rem 0; /* تعديل التباعد العلوي والسفلي */
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer_blog .container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Two columns: one for logo, one for content */
+    align-items: center;
+    padding: 0.5rem 1rem; /* تعديل التباعد داخل الحاوية */
+}
+
+.footer_blog .logo {
+    flex-grow: 1; /* يجعل الشعار في أقصى اليسار */
+}
+
+.footer_blog .logo img {
+    height: 40px; /* تصغير ارتفاع الشعار */
+    width: auto;
+    margin-right: 827px;
+}
+
+.footer_blog p {
+    margin: 0;
+    font-size: 0.8rem; /* تصغير حجم النص */
+}
+
+.footer_blog ul.end {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_blog ul.end li {
+    margin: 0 0.5rem; /* تقليل المسافة بين الأيقونات */
+}
+
+.footer_blog ul.end a {
+    color: #fff;
+    font-size: 1rem; /* تصغير حجم الأيقونات */
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer_blog .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 1rem;
+        margin-right: 105px;
+    }
+
+    .footer_blog .logo {
+        margin-bottom: 1rem;
+        margin-left: 153px;
+    }
+
+    .footer_blog ul.end {
+        justify-content: center;
+    }
+
+    .footer p{
+        margin-right: 630px;
+    }
+}

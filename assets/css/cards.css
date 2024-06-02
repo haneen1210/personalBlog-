@@ -1,0 +1,33 @@
+/* Cards CSS */
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* مساحة بين البطاقات */
+    flex-wrap: wrap;
+}
+.blog-post-card {
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px; /* طول البطاقات */
+    display: flex;
+    flex-direction: column;
+}
+.card-image {
+    width: 100%;
+    height: 200px; /* طول الصورة */
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+.card-content {
+    padding: 15px;
+    text-align: initial;
+    margin: 15px;
+}

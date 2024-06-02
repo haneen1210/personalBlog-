@@ -1,0 +1,73 @@
+/* Flexbox for Navbar */
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center; /* يوسّط العناصر عموديًا */
+    
+    background-color: #333;
+    padding: 1rem;
+}
+
+.logo {
+    flex-grow: 1; /* يجعل الشعار في أقصى اليسار */
+}
+
+.logo img {
+    height: 40px; /* حجم الشعار */
+    width: auto;
+}
+
+nav {
+    flex-grow: 5; /* يوسّط القائمة */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center; /* يوسّط العناصر أفقيًا */
+    align-items: center; /* يوسّط العناصر عموديًا */
+    flex-grow: 1;
+    margin-right: 260px;
+}
+
+.nav-list li {
+    margin-left: 5rem; /* تباعد بين العناصر */
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    text-decoration: underline; /* تحت خط للروابط عند التحويم */
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to full width */
+    }
+
+    .logo,
+    nav {
+        margin-bottom: 1rem; /* Add spacing between logo and nav */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .nav-list li {
+        margin: 0.5rem 0; /* Adjust spacing between items */
+    }
+}
